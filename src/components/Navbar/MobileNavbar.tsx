@@ -49,7 +49,7 @@ const MobileNavbar = () => {
               </ul>
             </div>
           </div>
-          <div className="logo-container mobile" style={{width: 80}}>
+          <div className="logo-container mobile" style={{width: 100}}>
             <a href="/">
               <img src={images.logo} alt="logo" className="navbar-logo" style={{width: "100%"}}/>
             </a>
@@ -77,7 +77,7 @@ const MobileNavbar = () => {
             <MenuIcon onClick={() => setOpenMenu(true)} className="menu-icon" />
             
           </div>
-          <div className="logo-container mobile" style={{width: 80}}>
+          <div className="logo-container mobile" style={{width: 100}}>
             <a href="/">
               <img src={images.logo} alt="logo" className="navbar-logo" style={{width: "100%"}}/>
             </a>
