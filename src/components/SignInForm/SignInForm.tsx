@@ -34,15 +34,15 @@ const AuthForm = () => {
         navigate('/')
       })
       .catch((error) => {
-        console.log(error.response.data)
-        if (error.response.data.message === `user ${data.email} not found`) {
-          toast.error('No account is set up for this email. Please Signup')
-          navigate('/signup')
-        } else if (error.response.data.message === 'password is incorrect') {
-          toast.error('Wrong email or password. Please try again')
-        } else {
-          toast('Log in failed. Please try again')
-        }
+        console.log(error)
+        // if (error.response.data.message === `user ${data.email} not found`) {
+        //   toast.error('No account is set up for this email. Please Signup')
+        //   navigate('/signup')
+        // } else if (error.response.data.message === 'password is incorrect') {
+        //   toast.error('Wrong email or password. Please try again')
+        // } else {
+        //   toast('Log in failed. Please try again')
+        // }
       })
   })
 

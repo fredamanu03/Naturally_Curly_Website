@@ -27,16 +27,16 @@ const SignUpForm = () => {
     formState: { errors },
   } = useForm<FormData>()
 
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit(async (data) => { 
     await axios
-      .post('http://localhost:5000/api/v1/users/register', data)
+      .post('https://nc-store-api.herokuapp.com/api/v1/users/register', data)
       .then((response) => {
-        console.log(response.data)
-        dispatch(userLogin(response.data.foundUser))
+        console.log(response)
+        dispatch(userLogin(response.data))
         navigate('/')
       })
       .catch((error) => {
-        console.log(error.response.data.message)
+        console.log(error)
       })
   })
 
