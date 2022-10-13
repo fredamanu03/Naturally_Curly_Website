@@ -63,6 +63,7 @@ export default function Cart() {
           console.log(err.message)
         })
     } else {
+      dispatch(closeCart())
       navigate('/signin')
     }
   }
