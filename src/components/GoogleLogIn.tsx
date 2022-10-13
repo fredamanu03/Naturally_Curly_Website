@@ -10,7 +10,7 @@ export default function GoogleLogIn() {
   const navigate = useNavigate()
   const googleAuthResponse = (response: any) => {
     axios
-      .post(' http://localhost:5000/auth/google', {
+      .post('https://nc-store-api.herokuapp.com/auth/google', {
         id_token: response.credential,
       })
       .then((response: any) => {

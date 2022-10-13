@@ -30,5 +30,5 @@ export function useOrders(userId:string) {
   const dispatch = useDispatch<any>()
   useEffect(() => {
     dispatch(fetchOrders(userId))
-  }, [dispatch])
+  }, [dispatch, userId])
 }
