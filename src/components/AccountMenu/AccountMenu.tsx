@@ -58,7 +58,8 @@ const AccountMenu = () => {
                   sx={{ width: 42, height: 42, marginTop: -3 }}
                   src={user?.image}
                 >
-                  {user?.firstName.charAt(0)}
+                  H
+                  {/* {user?.firstName.charAt(0)} */}
                 </Avatar>
               </IconButton>
             </Tooltip>
