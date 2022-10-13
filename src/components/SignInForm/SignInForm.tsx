@@ -28,7 +28,7 @@ const AuthForm = () => {
 
   const onSubmit = handleSubmit(async (data) => {
     await axios
-      .post('http://localhost:5000/api/v1/users/login', data)
+      .post('https://nc-store-api.herokuapp.com/api/v1/users/login', data)
       .then((response) => {  
         dispatch(userLogin(response.data.foundUser))
         navigate('/')
