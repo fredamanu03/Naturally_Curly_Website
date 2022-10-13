@@ -55,7 +55,7 @@ const AccountMenu = () => {
               >
                 <Avatar
                   alt={user?.firstName}
-                  sx={{ width: 42, height: 42, marginTop: -3 }}
+                  sx={{ width: 42, height: 42, marginTop: -2 }}
                   src={user?.image}
                 >
                   

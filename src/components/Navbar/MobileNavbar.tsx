@@ -36,7 +36,7 @@ const MobileNavbar = () => {
           <div>
             <div className="mobile-menu">
               <HiX onClick={() => setOpenMenu(false)} className="menu-icon" />
-              <p>Menu</p>
+           
             </div>
             <div className="mobile-nav-links">
               <ul>
@@ -49,9 +49,9 @@ const MobileNavbar = () => {
               </ul>
             </div>
           </div>
-          <div className="logo-container">
+          <div className="logo-container mobile" style={{width: 80}}>
             <a href="/">
-              <img src={images.logo} alt="logo" className="navbar-logo" />
+              <img src={images.logo} alt="logo" className="navbar-logo" style={{width: "100%"}}/>
             </a>
           </div>
           <div className="mobile-nav-icons">
@@ -75,11 +75,11 @@ const MobileNavbar = () => {
         <div className="mobile-nav-container">
           <div className="mobile-menu">
             <MenuIcon onClick={() => setOpenMenu(true)} className="menu-icon" />
-            <p>Menu</p>
+            
           </div>
-          <div className="logo-container">
+          <div className="logo-container mobile" style={{width: 80}}>
             <a href="/">
-              <img src={images.logo} alt="logo" className="navbar-logo" />
+              <img src={images.logo} alt="logo" className="navbar-logo" style={{width: "100%"}}/>
             </a>
           </div>
           <div className="mobile-nav-icons">
