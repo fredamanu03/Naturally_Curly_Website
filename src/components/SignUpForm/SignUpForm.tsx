@@ -31,7 +31,6 @@ const SignUpForm = () => {
   await axios
    .post('https://nc-store-api.herokuapp.com/api/v1/users/register', data)
    .then((response) => {
-    console.log(response)
     dispatch(userLogin(response.data))
     navigate('/')
    })
