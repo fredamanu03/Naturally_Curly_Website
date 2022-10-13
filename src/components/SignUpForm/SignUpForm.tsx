@@ -40,7 +40,7 @@ const SignUpForm = () => {
      toast.error('There is an account set up for this email. Please sign in')
      navigate('/signin')
     } else {
-     toast.error('Sign Up failed. Please again later')
+     toast.error('Sign Up failed. Please try again later')
     }
    })
  })

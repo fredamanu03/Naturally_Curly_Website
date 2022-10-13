@@ -30,19 +30,20 @@ const AuthForm = () => {
     await axios
       .post('https://nc-store-api.herokuapp.com/api/v1/users/login', data)
       .then((response) => {  
-        dispatch(userLogin(response.data.foundUser))
+        console.log(response)
+        dispatch(userLogin(response.data))
         navigate('/')
       })
       .catch((error) => {
         console.log(error)
-        // if (error.response.data.message === `user ${data.email} not found`) {
-        //   toast.error('No account is set up for this email. Please Signup')
-        //   navigate('/signup')
-        // } else if (error.response.data.message === 'password is incorrect') {
-        //   toast.error('Wrong email or password. Please try again')
-        // } else {
-        //   toast('Log in failed. Please try again')
-        // }
+        if (error.response.data.message === "user does not exist") {
+          toast.error('No account is set up for this email. Please Signup')
+          navigate('/signup')
+        } else if (error.response.data.message === 'password is incorrect') {
+          toast.error('Wrong email or password. Please try again')
+        } else {
+          toast('Log in failed. Please try again later')
+        }
       })
   })
 
