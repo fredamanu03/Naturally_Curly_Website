@@ -50,7 +50,7 @@ export default function Cart() {
     if (user) {
       const stripe = await getStripe()
       await axios
-        .post('http://localhost:5000/api/v1/stripe', {
+        .post('https://nc-store-api.herokuapp.com/api/v1/stripe', {
           items: cartItems,
           user,
         })

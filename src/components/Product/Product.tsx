@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined'
-import StarIcon from '@mui/icons-material/Star'
+
 
 import { ProductDocument } from '../../types'
 import './Product.css'
