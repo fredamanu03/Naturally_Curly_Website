@@ -30,7 +30,7 @@ export default function GoogleLogIn() {
         onError={() => {
           console.log('Login Failed')
         }}
-        width="350px"
+        width="100%"
       />
     </div>
   )

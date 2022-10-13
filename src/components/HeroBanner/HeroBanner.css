@@ -71,6 +71,12 @@
     text-align: end;
   }
 
+  @media screen and (max-width: 500px) {
+    .desc{
+      display: none;
+    }
+  }
+
   #desc1-p{
     text-transform: none;
   }
