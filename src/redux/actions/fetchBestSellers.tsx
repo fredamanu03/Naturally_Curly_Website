@@ -20,7 +20,7 @@ export const fetchBestSellers = () => {
   return function (dispatch: any) {
     dispatch(fetchBestSellersRequest())
     axios
-      .get(`http://localhost:5000/api/v1/products/bestsellers`)
+      .get(`https://nc-store-api.herokuapp.com/api/v1/products/bestsellers`)
       .then((response) => {
         dispatch(fetchBestSellersSuccess(response.data))
       })

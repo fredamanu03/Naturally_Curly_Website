@@ -20,7 +20,7 @@ export const fetchProduct = (productName: string) => {
   return function (dispatch: any) {
     dispatch(fetchProductRequest())
     axios
-      .get(`http://localhost:5000/api/v1/products/${productName}`)
+      .get(`https://nc-store-api.herokuapp.com/api/v1/products/${productName}`)
       .then((response) => {
         dispatch(fetchProductSuccess(response.data))
       })

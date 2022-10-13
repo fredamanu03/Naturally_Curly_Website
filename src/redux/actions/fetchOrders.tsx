@@ -20,7 +20,7 @@ export const fetchOrders = (userId: string) => {
   return function (dispatch: any) {
     dispatch(fetchOrdersRequest())
     axios
-      .get(`http://localhost:5000/api/v1/orders/${userId}`,)
+      .get(`https://nc-store-api.herokuapp.com/api/v1/orders/${userId}`,)
       .then((response) => {     
         dispatch(fetchOrdersSuccess(response.data))
       })
