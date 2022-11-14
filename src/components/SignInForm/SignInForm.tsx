@@ -18,7 +18,7 @@ type FormData = {
   password: string;
 };
 
-const AuthForm = () => {
+const SignInForm = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [showPassword, setShowPassword] = useState(false);
@@ -139,4 +139,4 @@ const AuthForm = () => {
   );
 };
 
-export default AuthForm;
+export default SignInForm;
